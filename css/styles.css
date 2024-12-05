@@ -22,9 +22,10 @@ img {
     display: block;
     max-width: 100%;
 }
-/* section {
-    text-align: center;
-} */
+section {
+    width: 100%
+}
+
 .container {
     max-width: 1158px;
     padding-left: 15px;
@@ -37,8 +38,14 @@ img {
 .header-page {
     border-bottom: 1px solid #e7e9fc;
 }
-
-.nav-page {}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.nav-page {
+    display: flex;
+    align-items: center;
+}
 
 .nav-logo {
     font-family: 'Raleway', sans-serif;
@@ -48,21 +55,30 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    padding: 24px 0;
+    margin-right: 76px;
 }
 
 .nav-logo-studio {
     color: #2e2f42;
 }
-.nav-list {}
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;;
+}
 
 .nav-item {}
 
 .nav-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    
 }
 .nav-link:focus {
     color: #404bbf;
@@ -72,6 +88,7 @@ img {
     color: #404bbf;
 }
 .contact {
+    margin-left: auto;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
@@ -79,11 +96,17 @@ img {
     font-style: normal;
 }
 
-.contact-list {}
+.contact-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 
 .contact-item {}
 
 .contact-link {
+    display: block;
+    padding: 24px 0;
     color: #434455;
 }
 .contact-link:hover {
@@ -98,9 +121,14 @@ img {
 /* #region hero */
 .hero {
     background-color: #2e2f42;
+    
+}
+.container-hero {
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .hero-title {
     font-weight: 700;
@@ -148,6 +176,9 @@ img {
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
+.title-three-feature {
+    margin-bottom: 8px;
+}
 .block-text {
     font-size: 16px;
     line-height: 1.5;
@@ -177,9 +208,17 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.feature-list {}
+.feature-list {
+    display: flex;
+    gap: 24px;
+    
+    
 
-.feature-item {}
+}
+
+.feature-item {
+    width: calc((100%-72)/4);
+}
 /* #endregion feature */
 
 /* #region team */
