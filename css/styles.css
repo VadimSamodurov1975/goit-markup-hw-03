@@ -3,35 +3,32 @@ body {
     color: #434455;
     background-color: #fff;
 }
-ul {
+/* reset */
+
+ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 a {
     text-decoration: none;
 }
+
 h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
-ul, ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-}
+
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
-section {
-    width: 100%
-}
+/* common */
 
 .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 /* #region header */
@@ -89,10 +86,6 @@ section {
 }
 .contact {
     margin-left: auto;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
     font-style: normal;
 }
 
@@ -106,6 +99,10 @@ section {
 
 .contact-link {
     display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     padding: 24px 0;
     color: #434455;
 }
@@ -136,6 +133,8 @@ section {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #ffffff;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 .hero-button {
@@ -147,6 +146,8 @@ section {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
+    margin-right: auto;
+    margin-left: auto;
     padding: 16px 32px;    
     margin-top: 48px;
     border-radius: 4px;
@@ -210,14 +211,13 @@ section {
 }
 .feature-list {
     display: flex;
+    align-items: center;
     gap: 24px;
-    
-    
-
 }
 
 .feature-item {
-    width: calc((100%-72)/4);
+    display: block;
+    width: calc((100% - 72px) / 4);
 }
 /* #endregion feature */
 
@@ -228,12 +228,34 @@ section {
     padding-bottom: 120px;
     
 }
-.team .title-two {
+.team-container {
+    text-align: center;
+}
+.team-title-two {
     margin-bottom: 72px;
-    max-width: 162px;
     margin-left: auto;
-    margin-right: auto;
-   
+    margin-right: auto;   
+}
+.team-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;   
+}
+.team-img-block {
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    display: block;
+    width: calc((100% - 72px) / 4);
+
+}
+.team-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding: 32px 16px;
+    
 }
 /* #endregion team */
 
